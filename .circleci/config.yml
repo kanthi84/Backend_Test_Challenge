@@ -24,6 +24,10 @@ jobs:
     steps:
       - checkout
       
+    test:
+      override:
+        - mvn test
+ 
     Commands:
       cucumber:
       description: "Run cucumber"
