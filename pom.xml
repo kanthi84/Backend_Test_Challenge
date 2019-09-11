@@ -6,7 +6,7 @@
     <artifactId>Freenow-automation-test</artifactId>
     <version>0.0.1-${revision}</version>
     <packaging>jar</packaging>
-    <name>csat-automation</name>
+    <name>freenow-automation</name>
 
     <properties>
         <revision>SNAPSHOT</revision>
