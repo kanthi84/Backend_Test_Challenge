@@ -39,7 +39,7 @@ jobs:
 
       # run tests!
 #       - run: mvn test - Dcucumber.options="@test" 
-      - run: mvn test 
+      - run: mvn test -Dcucumber.options="testcases/api/src/test/resources/features/JSON_Placeholder.feature --tags @test"
 
       
 #     test:
