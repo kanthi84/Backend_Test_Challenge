@@ -31,6 +31,8 @@ jobs:
             - v1-dependencies-
 
       - run: mvn dependency:go-offline
+      
+      
 
       - save_cache:
           paths:
@@ -39,7 +41,10 @@ jobs:
 
       # run tests!
 #       - run: mvn test - Dcucumber.options="@test" 
-      - run: mvn test -Dcucumber.options="testcases/api/src/test/resources/features/JSON_Placeholder.feature --tags @test"
+#       - run: mvn test -Dcucumber.options="testcases/api/src/test/resources/features/JSON_Placeholder.feature --tags @test"
+      - run: 
+            name: tests
+            command: mvn test -Dcucumber.options="testcases/api/src/test/resources/features/JSON_Placeholder.feature --tags @test"
 
       
 #     test:
